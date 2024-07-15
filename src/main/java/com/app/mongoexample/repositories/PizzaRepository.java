@@ -6,4 +6,5 @@ import com.app.mongoexample.models.Pizza;
 
 public interface PizzaRepository extends MongoRepository<Pizza,String> {
     
+    
 }

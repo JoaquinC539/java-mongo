@@ -52,4 +52,10 @@ public class PizzaController {
         Integer deleted = this.pizzaService.delete(id);
         return ResponseEntity.ok().body(deleted);
     }
+    @GetMapping("/agg")
+    public Object agg(){
+       Object a= pizzaService.aggre();
+       
+        return ResponseEntity.ok().body(a);
+    }
 }
